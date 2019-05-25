@@ -2551,7 +2551,7 @@ int i = m_ticketlines.getSelectedIndex();
                 {
                     try {
                         Statement stmt = m_App.getSession().getConnection().createStatement();
-                        ResultSet resultset = stmt.executeQuery("SELECT NOW()");
+                        ResultSet resultset = stmt.executeQuery("SELECT DATE_ADD(NOW(), INTERVAL 5 HOUR)");
                         resultset.next();
                         Date ahora = resultset.getDate(1);
                         System.out.println(temp.getVigencia());
@@ -2807,7 +2807,7 @@ private void performCustomerAdd2(String id, String correo, String nombre, String
 private void performCustomerAdd(String id, String correo, String nombre, String direccion, String referencia, String telefono, String celular, String observaciones, String deuda)
     throws BasicException
   {
-    new StaticSentence(this.m_App.getSession(), "INSERT INTO CUSTOMERS (ID, SEARCHKEY,EMAIL, NAME, ADDRESS, ADDRESS2, PHONE, PHONE2, NOTES, MAXDEBT, VISIBLE, CURDATE) VALUES (?,?, ?, ?, ?, ?, ?, ?, ?, ?, ?, NOW())", new SerializerWriteBasic(new Datas[] { Datas.STRING, Datas.STRING, Datas.STRING, Datas.STRING, Datas.STRING, Datas.STRING, Datas.STRING, Datas.STRING, Datas.STRING, Datas.DOUBLE, Datas.INT })).exec(new Object[] { id, id, correo, nombre, direccion, referencia, telefono, celular, observaciones, Double.valueOf(Double.parseDouble(deuda.replace("$", ""))), Integer.valueOf(1) });
+    new StaticSentence(this.m_App.getSession(), "INSERT INTO CUSTOMERS (ID, SEARCHKEY,EMAIL, NAME, ADDRESS, ADDRESS2, PHONE, PHONE2, NOTES, MAXDEBT, VISIBLE, CURDATE) VALUES (?,?, ?, ?, ?, ?, ?, ?, ?, ?, ?, DATE_ADD(NOW(),INTERVAL 5 HOUR))", new SerializerWriteBasic(new Datas[] { Datas.STRING, Datas.STRING, Datas.STRING, Datas.STRING, Datas.STRING, Datas.STRING, Datas.STRING, Datas.STRING, Datas.STRING, Datas.DOUBLE, Datas.INT })).exec(new Object[] { id, id, correo, nombre, direccion, referencia, telefono, celular, observaciones, Double.valueOf(Double.parseDouble(deuda.replace("$", ""))), Integer.valueOf(1) });
     
     this.m_oTicket.setCustomer(this.dlSales.loadCustomerExt(id));
   }

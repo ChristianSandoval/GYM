@@ -105,9 +105,9 @@
                   <Properties>
                     <Property name="horizontalAlignment" type="int" value="0"/>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/com/openbravo/images/logo.png"/>
+                      <Image iconType="3" name="/com/openbravo/images/lokos.jpg"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="&lt;html&gt;&lt;body&gt;&lt;div text-align=&apos;center&apos;&gt;Software punto de venta Conectiva.&#xa;&lt;br/&gt;&lt;br/&gt;&#xa;Pisa #872. Col. Italia Providencia.&#xa;Guadalajara, Jalisco.&#xa;&lt;br/&gt;&lt;br/&gt;&#xa;Celular: (33) 1570-9719&#xa;Celular: (33) 3494-9545&#xa;Telefono fijo: 1920-5691&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;"/>
+                    <Property name="text" type="java.lang.String" value="&lt;html&gt;REALIZADO POR KINETIK STUDIOS MEXICO&lt;br/&gt;&lt;center&gt;SOPORTE: 33 3953 1719&lt;/center&gt;&lt;/html&gt;"/>
                     <Property name="alignmentX" type="float" value="0.5"/>
                     <Property name="horizontalTextPosition" type="int" value="0"/>
                     <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">

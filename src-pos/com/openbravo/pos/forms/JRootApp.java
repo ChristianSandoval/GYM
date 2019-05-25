@@ -594,8 +594,8 @@ public class JRootApp extends JPanel implements AppView {
         jPanel4.setLayout(new javax.swing.BoxLayout(jPanel4, javax.swing.BoxLayout.Y_AXIS));
 
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/openbravo/images/logo.png"))); // NOI18N
-        jLabel1.setText("<html><body><div text-align='center'>Software punto de venta Conectiva.\n<br/><br/>\nPisa #872. Col. Italia Providencia.\nGuadalajara, Jalisco.\n<br/><br/>\nCelular: (33) 1570-9719\nCelular: (33) 3494-9545\nTelefono fijo: 1920-5691</div></body></html>");
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/openbravo/images/lokos.jpg"))); // NOI18N
+        jLabel1.setText("<html>REALIZADO POR KINETIK STUDIOS MEXICO<br/><center>SOPORTE: 33 3953 1719</center></html>");
         jLabel1.setAlignmentX(0.5F);
         jLabel1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jLabel1.setMaximumSize(new java.awt.Dimension(800, 1024));
